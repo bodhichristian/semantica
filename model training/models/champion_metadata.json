@@ -1,0 +1,13 @@
+{
+  "saved_at": "2025-10-30T02:46:23.651489Z",
+  "pipeline": "union(token tfidf 1-2; char tfidf 3-5 sublinear) + ROS + LogisticRegression",
+  "class_weight": "balanced",
+  "oversampling": "not majority",
+  "classes": [
+    "bug",
+    "documentation",
+    "enhancement",
+    "help wanted",
+    "other"
+  ]
+}
