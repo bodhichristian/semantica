@@ -9,7 +9,7 @@ Helpdesk Tickets - High Quality Github Issue
 https://www.kaggle.com/datasets/tobiasbueck/helpdesk-github-tickets/data
 
 ### Model Performance
-The model's has an F1 score of 0.885 for accuracy. Currently the model best predicts for _Bug_ with 0.924 precision and an F1 score of 0.945. The poorest performance is for predicting _Help Wanted_ with a precision and F1 score of 0.571 and 0.403 respectively. More details are available in the /model_training directory mentioned below. The web app mentioned below collects user input in a research demo setting, and will be used to further enhance the model performance.
+The model's has an F1 score of 0.885 for accuracy. Currently the model best predicts for _Bug_ with 0.924 precision and an F1 score of 0.945. The poorest performance is for predicting _Help Wanted_ with a precision and F1 score of 0.571 and 0.403 respectively. More details are available in the /model_training directory mentioned below. The web app mentioned below leverages the Google Sheets API to collect user input in a research demo setting, and will be used to further enhance the model performance. The title, body, predicted category, and additional context are stored. This helps to understand model performance in a real-world setting, and potentially gain deeper insights. Future iterations may provide automatic predictions during issue body composition by leveraging a prediction for the following texts prior to a prediction for category.
 
 <img width="1620" height="447" alt="Screenshot 2025-11-02 at 6 22 54 PM" src="https://github.com/user-attachments/assets/6a867da8-9c18-42fb-bd48-b1df764f13f4" />
 
