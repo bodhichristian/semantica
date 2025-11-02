@@ -2,7 +2,7 @@
 An engine for category prediction during the software ticket submission process.
 
 ## Overview
-Software issues come in all shapes and sizes. The category of issue often determines the relevant details necessary to sort and solve. By predicting the category during the issue submission workflow, we can streamline the issue submission flow, while targeting the contextually relevant data. To achieve this, issue content from a dataset of 16,000 GitHub issues found on Kaggle was processed into phrases and character sequences TF-IDF data for token analysis, random oversampling was used to balance minority classes, and a Logistic Regression model was trained to predict one of 5 categories: bug, help wanted, documentation, enhancement, and other.
+Software tickets come in all shapes and sizes. The category of ticket often determines the relevant details necessary to sort and solve. By predicting the category during the issue submission workflow, we can streamline the issue submission flow, while targeting the contextually relevant data. To achieve this, title, body, and label content from a dataset of 16,000 GitHub issues found on Kaggle was processed into phrases and character sequences as TF-IDF data for token analysis. Random oversampling was then used to balance minority classes, and a Logistic Regression model was trained to predict one of 5 categories: bug, help wanted, documentation, enhancement, and other. The web app mentioned below simply reverses the pipeline, combining the text and body before processing semantic calculations to return a prediction.
 
 ### Initial Dataset
 Helpdesk Tickets - High Quality Github Issue  
