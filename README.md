@@ -1,6 +1,12 @@
 # semantica
 An engine for category prediction during the software ticket submission process.
 
+## Overview
+Software issues come in all shapes and sizes. The category of issue often determines the relevant details necessary to sort and solve. By predicting the category during the issue submission workflow, we can streamline the issue submission flow, while targeting the contextually relevant data. To achieve this, issue content from a dataset of 16,000 GitHub issues found on Kaggle was processed into phrases and character sequences TF-IDF data for token analysis, random oversampling was used to balance minority classes, and a Logistic Regression model was trained to predict one of 5 categories: bug, help wanted, documentation, enhancement, and other.
+
+### Performance
+Currently the model best predicts for _Bug_ with 0.924 precision and an F1 score of 0.945. The poorest performance is for predicting _Help Wanted_ with a precision and F1 score of 0.571 and 0.403 respectively. The web app mentioned below collects user input in a research demo setting, and will be used to further enhance the model performance.
+
 ### /model_training
 This folder contains a jupyter notebook exploring various machine learning models in an attempt to create a model that can predict an issue's category based on the semantic and heuristic data available in just the title and body text. The best performing pipeline and corresponding metadata are available in `/model_training/models/`
 
